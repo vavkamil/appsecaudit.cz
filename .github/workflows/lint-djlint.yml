@@ -1,0 +1,35 @@
+# https://www.djlint.com/docs/getting-started/ 
+
+name: Lint - HTML
+
+on:
+  pull_request:
+    paths:
+      - '**.html'
+
+permissions: {}
+
+jobs:
+  djlint:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v6.0.1
+        with:
+          persist-credentials: false
+
+      - name: Set up Python
+        uses: actions/setup-python@v6
+        with:
+          python-version-file: '.python-version'
+
+      - name: Install djlint
+        run: |
+          python -m pip install --upgrade pip
+          pip install $(grep '^djlint==' requirements.txt)
+
+      - name: Run djlint
+        run: python -m djlint *.html --lint --check --format-css --format-js
