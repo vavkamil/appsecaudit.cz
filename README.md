@@ -72,6 +72,7 @@ Content is written for **engineering-led teams**, security professionals, and te
 /
 ├── robots.txt
 ├── sitemap.xml
+├── .well-known/security.txt
 │
 ├── index.html
 ├── en/
