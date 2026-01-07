@@ -4,11 +4,11 @@
     html5up.net | @ajlkn
     Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
 -->
-<html lang="en">
+<html lang="cs">
     <head>
         <title>References | AppSec Audit .cz | @vavkamil | Kamil Vavra</title>
         <meta charset="utf-8" />
-        <meta name="language" content="en">
+        <meta name="language" content="cs">
         <meta name="viewport"
               content="width=device-width, initial-scale=1, user-scalable=no" />
         <meta name="author" content="@vavkamil">
@@ -30,8 +30,8 @@
               content="AppSec Audit .cz | Offensive Application Security by Kamil Vavra">
         <meta property="og:image:width" content="1200">
         <meta property="og:image:height" content="630">
-        <meta property="og:url" content="https://appsecaudit.cz/en/references.html">
-        <meta property="og:locale" content="en_US" />
+        <meta property="og:url" content="https://appsecaudit.cz/cs/references.html">
+        <meta property="og:locale" content="cs_CZ" />
         <meta name="twitter:card" content="summary_large_image">
         <meta name="twitter:title"
               content="AppSec Audit .cz | @vavkamil | Kamil Vavra">
@@ -42,7 +42,7 @@
         <meta name="twitter:creator" content="@vavkamil">
         <link rel="icon" href="../images/favicon.ico" />
         <link rel="stylesheet" href="../assets/css/main.css" />
-        <link rel="canonical" href="https://appsecaudit.cz/en/references.html">
+        <link rel="canonical" href="https://appsecaudit.cz/cs/references.html">
         <link rel="alternate"
               hreflang="en"
               href="https://appsecaudit.cz/en/references.html">
@@ -104,12 +104,15 @@
                 justify-content: center;
 
                 height: 60px;
-                padding: 12px;
+                padding: 10px;
 
                 background: #fff;
                 border-radius: 6px;
                 box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
                 transition: transform 0.15s ease, box-shadow 0.15s ease;
+                filter: grayscale(100%);
+                transition: transform 0.3s,
+                    filter 0.3s;
             }
 
             .logo-card img {
@@ -121,6 +124,8 @@
             .logo-card:hover {
                 transform: translateY(-2px);
                 box-shadow: 0 8px 18px rgba(0, 0, 0, 0.12);
+                filter: none;
+                transform: scale(1.05) rotate(3deg);
             }
         </style>
     </head>
@@ -156,30 +161,20 @@
                         </ul>
                     </header>
                     <section>
-                        <h2 id="content">References: who I’ve worked with</h2>
+                        <h2 id="content">Reference: s kým jsem spolupracoval</h2>
                         <p>
-                            Over the years, I’ve worked with fast-growing startups and established companies across the Czech Republic, Europe, and the United States.
-                            Through penetration testing, audits, and vulnerability research, I’ve identified thousands of security issues and helped protect <strong>systems used by millions of people worldwide</strong>.
+                            Během let jsem spolupracoval s rychle rostoucími startupy i zavedenými společnostmi v České republice, Evropě a Spojených státech.
+                            Prostřednictvím penetračních testů, auditů a security research jsem identifikoval tisíce zranitelností a pomohl chránit <strong>systémy používané miliony lidí po celém světě</strong>.
                         </p>
                         <p>
-                            Beyond client work, I actively contribute to the security community through open-source tooling, public talks, and knowledge sharing.
-                            As the OWASP Czech Chapter leader, I focus on improving application security awareness and <em>raising the overall security maturity</em> of teams and organizations.
+                            Kromě práce pro klienty se aktivně zapojuji do bezpečnostní komunity prostřednictvím open-source nástrojů, veřejných přednášek a sdílení znalostí.
+                            Jako OWASP Czech Chapter leader se zaměřuji na zvyšování povědomí o bezpečnosti aplikací a <em>celkové zvyšování úrovně bezpečnostní vyspělosti</em> týmů a organizací.
                         </p>
                         <p>
-                            <strong>Some of the companies I’ve helped include:</strong>
+                            <strong>Některé ze společností, kterým jsem pomáhal:</strong>
                         </p>
                         <div class="box alt">
                             <div class="row gtr-50 gtr-uniform">
-                                <div class="col-1 col-2-medium col-4-small">
-                                    <div class="logo-card" title="nodejs.org">
-                                        <img src="../images/logos/nodejs_org.png" width="" height="" alt="" />
-                                    </div>
-                                </div>
-                                <div class="col-1 col-2-medium col-4-small">
-                                    <div class="logo-card" title="kubernetes.io">
-                                        <img src="../images/logos/kubernetes_io.png" width="" height="" alt="" />
-                                    </div>
-                                </div>
                                 <div class="col-1 col-2-medium col-4-small">
                                     <div class="logo-card" title="spotify.com">
                                         <img src="../images/logos/spotify_com.png" width="" height="" alt="" />
@@ -228,6 +223,16 @@
                                 <div class="col-1 col-2-medium col-4-small">
                                     <div class="logo-card" title="bugcrowd.com">
                                         <img src="../images/logos/bugcrowd_com.png" width="" height="" alt="" />
+                                    </div>
+                                </div>
+                                <div class="col-1 col-2-medium col-4-small">
+                                    <div class="logo-card" title="nodejs.org">
+                                        <img src="../images/logos/nodejs_org.png" width="" height="" alt="" />
+                                    </div>
+                                </div>
+                                <div class="col-1 col-2-medium col-4-small">
+                                    <div class="logo-card" title="kubernetes.io">
+                                        <img src="../images/logos/kubernetes_io.png" width="" height="" alt="" />
                                     </div>
                                 </div>
                                 <div class="col-1 col-2-medium col-4-small">
@@ -646,26 +651,26 @@
                 <div class="inner">
                     <nav id="menu">
                         <header class="major">
-                            <h2>References</h2>
+                            <h2>Reference</h2>
                         </header>
                         <ul>
                             <li>
-                                <a href="../index.html">Homepage</a>
+                                <a href="index.html">Domů</a>
                             </li>
                             <li>
-                                <a href="services.html">Services</a>
+                                <a href="services.html">Služby</a>
                             </li>
                             <li>
-                                <a href="aboutme.html">About me</a>
+                                <a href="aboutme.html">O mně</a>
                             </li>
                             <li>
-                                <a href="references.html">References</a>
+                                <a href="references.html">Reference</a>
                             </li>
                             <li>
-                                <a href="contact.html">Contact</a>
+                                <a href="contact.html">Kontakt</a>
                             </li>
                             <li>
-                                <span class="opener">External Links</span>
+                                <span class="opener">Externí Odkazy</span>
                                 <ul id="links">
                                     <li>
                                         <a target="_blank" href="#">CVEalert.io</a>
@@ -688,9 +693,9 @@
                     </nav>
                     <section>
                         <header class="major">
-                            <h2>Get in touch</h2>
+                            <h2>Ozvěte se</h2>
                         </header>
-                        <p>Email is the preferred way of communication.</p>
+                        <p>E-mail je preferovaný způsob komunikace.</p>
                         <ul class="contact">
                             <li class="icon solid fa-envelope">
                                 <a href="#" onclick="prompt('Email address', 'vavkamil@protonmail.com')">vavkamil@protonmail.com</a>
@@ -702,7 +707,7 @@
                     </section>
                     <section>
                         <header class="major">
-                            <h2>Advertisement</h2>
+                            <h2>Reklama</h2>
                         </header>
                         <div class="mini-posts">
                             <article>
