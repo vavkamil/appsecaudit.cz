@@ -113,6 +113,35 @@
                 transform: scale(1.05) rotate(3deg);
             }
 
+            @media screen and (max-width: 680px) {
+
+                #banner {
+                    display: flex !important;
+                    flex-direction: column !important;
+                }
+
+
+                #banner>.content {
+                    order: 1 !important;
+                }
+
+                #banner>.image {
+                    order: 2 !important;
+                    margin-top: 2em;
+                }
+
+
+                #avatar {
+                    float: none !important;
+                    width: 60% !important;
+                    max-width: 260px;
+                    display: block;
+                    margin: 0 auto;
+                }
+            }
+
+
+
             #links {
                 text-transform: none !important;
             }
