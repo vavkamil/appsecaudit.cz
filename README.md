@@ -1,7 +1,6 @@
 # AppSecAudit.cz
 
-This repository contains the source code for **[AppSecAudit.cz](https://appsecaudit.cz)** —  
-a personal website and professional portfolio of **Kamil Vávra**, independent offensive application security specialist.
+This repository contains the source code for **[AppSecAudit.cz](https://appsecaudit.cz)**, _a personal website and professional portfolio_.
 
 The site presents services, background, references, and contact information related to **advanced web application security audits and penetration testing**.
 
