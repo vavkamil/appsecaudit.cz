@@ -6,31 +6,153 @@
 -->
 <html lang="en">
     <head>
-        <title>Contact | AppSec Audit .cz | @vavkamil | Kamil Vavra</title>
+        <title>AppSec Audit .cz | @vavkamil | Kamil Vavra</title>
         <meta charset="utf-8" />
+        <meta name="language" content="en">
         <meta name="viewport"
               content="width=device-width, initial-scale=1, user-scalable=no" />
+        <meta name="author" content="@vavkamil">
+        <meta name="web_author" content="vavkamil.cz">
+        <meta name="robots" content="index,follow">
         <meta name="description"
-              content="Independent offensive security expert with 19+ years of experience in web application security, penetration testing, AppSec audits, secure code review, and CI/CD security.">
+              content="Advanced Web Application Security Audits & Penetration Testing for modern web apps, APIs, and CI/CD pipelines. Manual, attacker-driven testing focused on real-world risk.">
         <meta name="keywords"
               content="application security, appsec, web application security, penetration testing, offensive security, ethical hacking, security audits, secure code review, CI/CD security, bug bounty, vulnerability research">
+        <meta property="og:type" content="website">
+        <meta property="og:site_name" content="AppSecAudit.cz">
+        <meta property="og:title"
+              content="AppSec Audit .cz | @vavkamil | Kamil Vavra">
+        <meta property="og:description"
+              content="Advanced Web Application Security Audits & Penetration Testing for modern web apps, APIs, and CI/CD pipelines. Manual, attacker-driven testing focused on real-world risk.">
+        <meta property="og:image"
+              content="https://appsecaudit.cz/images/og-image.png">
+        <meta property="og:image:alt"
+              content="AppSec Audit .cz | Offensive Application Security by Kamil Vavra">
+        <meta property="og:image:width" content="1200">
+        <meta property="og:image:height" content="630">
+        <meta property="og:url" content="https://appsecaudit.cz/index.html">
+        <meta property="og:locale" content="en_US" />
+        <meta name="twitter:card" content="summary_large_image">
+        <meta name="twitter:title"
+              content="AppSec Audit .cz | @vavkamil | Kamil Vavra">
+        <meta name="twitter:description"
+              content="Advanced Web Application Security Audits & Penetration Testing for modern web apps, APIs, and CI/CD pipelines. Manual, attacker-driven testing focused on real-world risk.">
+        <meta name="twitter:image"
+              content="https://appsecaudit.cz/images/og-image.png">
+        <meta name="twitter:creator" content="@vavkamil">
         <link rel="icon" href="images/favicon.ico" />
         <link rel="stylesheet" href="assets/css/main.css" />
+        <link rel="canonical" href="https://appsecaudit.cz/index.html">
+        <link rel="alternate"
+              hreflang="en"
+              href="https://appsecaudit.cz/index.html">
+        <link rel="alternate"
+              hreflang="cs"
+              href="https://appsecaudit.cz/cs/index.html">
+        <link rel="alternate"
+              hreflang="x-default"
+              href="https://appsecaudit.cz/index.html">
+        <script type="application/ld+json">
+            {
+                "@context": "https://schema.org",
+                "@graph": [{
+                    "@type": "Person",
+                    "@id": "https://appsecaudit.cz/#person",
+                    "name": "Kamil Vávra",
+                    "alternateName": "Kamil Vavra",
+                    "url": "https://appsecaudit.cz",
+                    "email": "vavkamil@protonmail.com",
+                    "jobTitle": "Application Security Engineer",
+                    "sameAs": [
+                        "https://github.com/vavkamil",
+                        "https://www.linkedin.com/in/vavkamil",
+                        "https://twitter.com/vavkamil",
+                        "https://vavkamil.cz"
+                    ]
+                }, {
+                    "@type": "ProfessionalService",
+                    "@id": "https://appsecaudit.cz/#service",
+                    "name": "AppSecAudit.cz",
+                    "url": "https://appsecaudit.cz",
+                    "logo": "https://appsecaudit.cz/images/og-image.png",
+                    "email": "vavkamil@protonmail.com",
+                    "founder": {
+                        "@id": "https://appsecaudit.cz/#person"
+                    },
+                    "areaServed": "Worldwide",
+                    "serviceType": [
+                        "Web Application Penetration Testing",
+                        "Advanced Web Application Security Audits",
+                        "Secure Code Review",
+                        "CI/CD Security Assessments"
+                    ],
+                    "sameAs": [
+                        "https://github.com/vavkamil",
+                        "https://www.linkedin.com/in/vavkamil"
+                    ]
+                }]
+            }
+        </script>
         <style>
             #main>.inner>section {
                 padding: 3em 0 4em 0;
             }
+
+            #avatar {
+                float: right;
+                width: 75% !important;
+
+                height: auto;
+                filter: grayscale(100%);
+                transition: transform 0.3s,
+                    filter 0.3s;
+            }
+
+            #avatar:hover {
+                filter: none;
+                transform: scale(1.05) rotate(3deg);
+            }
+
+            @media screen and (max-width: 680px) {
+
+                #banner {
+                    display: flex !important;
+                    flex-direction: column !important;
+                }
+
+
+                #banner>.content {
+                    order: 1 !important;
+                }
+
+                #banner>.image {
+                    order: 2 !important;
+                    margin-top: 2em;
+                }
+
+
+                #avatar {
+                    float: none !important;
+                    width: 75% !important;
+                    max-width: 375px;
+                    display: block;
+                    margin: 0 auto;
+                }
+            }
+
+
+
+            #links {
+                text-transform: none !important;
+            }
         </style>
     </head>
     <body class="is-preload">
-        <!-- Wrapper -->
         <div id="wrapper">
-            <!-- Main -->
             <div id="main">
                 <div class="inner">
-                    <!-- Header -->
                     <header id="header">
-                        <a href="en_index.html" class="logo"><strong>AppSec</strong> Audit .cz | Web <strong>Application Security</strong> by @vavkamil</a>
+                        <a href="index.html" class="logo"><strong>AppSec</strong> Audit .cz | Web <strong>Application Security</strong> by @vavkamil</a>
                         <ul class="icons">
                             <li>
                                 <a target="_blank"
@@ -49,88 +171,50 @@
                             </li>
                             <li>|</li>
                             <li>
-                                <a href="cs_index.html" class="icon solid fa-flag"><span class="label">CZ</span> CZ</a>
+                                <a href="cs/index.html" class="icon solid fa-flag"><span class="label">CZ</span> CZ</a>
                             </li>
                             <li>
-                                <a href="en_index.html" class="icon regular fa-flag"><span class="label">EN</span> EN</a>
+                                <a href="index.html" class="icon regular fa-flag"><span class="label">EN</span> EN</a>
                             </li>
                         </ul>
                     </header>
-                    <!-- Content -->
-                    <section>
-                        <!-- Content -->
-                        <h2 id="content">Contact & engagement details</h2>
-                        <p>
-                            I work on clearly scoped, hands-on security engagements with a strong focus on offensive web application security.
-                            Typical penetration testing engagements are around <strong>80 hours (10 MD)</strong>, depending on scope and complexity. If you’re unsure about scope or approach, feel free to reach out. I’m happy to discuss options and expectations upfront.
-                        </p>
-                        <p>
-                            My standard day rate is <strong>~850 USD / MD</strong>.
-                            I also offer shorter consultations, application security audits (including CI/CD), and support with establishing
-                            responsible disclosure or bug bounty programs.
-                        </p>
-                        <hr class="major" />
-                        <div class="row">
-                            <div class="col-4 col-12-small">
-                                <h3>Get in touch</h3>
+                    <section id="banner">
+                        <div class="content">
+                            <header>
+                                <h1>
+                                    Hi, my name is
+                                    <br />
+                                    Kamil Vavra
+                                </h1>
                                 <p>
-                                    Need to discuss a potential engagement, collaboration, or have a specific security question?
-                                    Email is the preferred way of communication.
+                                    Senior <strong>Application Security</strong> Engineer
                                 </p>
-                                <ul class="contact">
-                                    <li class="icon solid fa-envelope">
-                                        <a href="#" onclick="prompt('Email address', 'vavkamil@protonmail.com')">vavkamil@protonmail.com</a>
-                                    </li>
-                                    <li class="icon solid fa-home">
-                                        Brno, Czechia <em>(remote)</em>
-                                    </li>
-                                </ul>
-                            </div>
-                            <div class="col-4 col-12-small">
-                                <h3>Registered office & billing details</h3>
-                                <p>
-                                    Sole trader registered in the Trade Register since 19. 07. 2022,
-                                    <br>
-                                    recorded by the Brno City Hall.
-                                </p>
-                                <div class="row">
-                                    <div class="col-4 col-12-medium">
-                                        <p>
-                                            <strong>Kamil Vavra</strong>
-                                            <br>
-                                            Nove sady 988/2
-                                            <br>
-                                            602 00 Brno
-                                            <br>
-                                            Czechia
-                                        </p>
-                                    </div>
-                                    <div class="col-8 col-12-medium">
-                                        <p>
-                                            <strong>IC:</strong> <a target="_blank"
-    href="https://ares.gov.cz/ekonomicke-subjekty?ico=75345773">75345773</a>
-                                            <br>
-                                            <strong>Data Box ID:</strong> d7ttevd
-                                            <br>
-                                            <strong>SWIFT:</strong> AIRACZPP
-                                            <br>
-                                            <strong>IBAN:</strong> CZ0100000000101000131337
-                                        </p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-4 col-12-small">
-                                <h3>Services: how can I help you today?</h3>
-                                <ul class="alt">
-                                    <li>Web Application Penetration Testing & Bug Bounty</li>
-                                    <li>Application Security Testing (SAST, DAST, SCA)</li>
-                                    <li>Advanced Web Application Security Audits</li>
-                                    <li>CI/CD Security Assessments & Supply Chain Risk</li>
-                                    <li>Secure Code Review (Web, APIs, Backend & Android)</li>
-                                    <li>Threat Modeling & Real-World Attack Surface Analysis</li>
-                                </ul>
-                            </div>
+                            </header>
+                            <p>
+                                I'm an independent offensive security expert with <strong>19+ years of hands-on ethical hacking experience</strong>, specializing in offensive web application security.
+                            </p>
+                            <p>
+                                I help organizations identify critical weaknesses and build <em>real resilience</em> against modern threats. <strong>Available for short-term engagements, including:</strong>
+                            </p>
+                            <ul>
+                                <li>Web Application Penetration Testing</li>
+                                <li>Advanced Web Application Security Audits</li>
+                                <li>Secure Code Review & CI/CD Security Assessments</li>
+                                <li>Application Security Testing (SAST, DAST, SCA)</li>
+                                <li>Threat Modeling & Real-World Attack Surface Analysis</li>
+                            </ul>
+                            <ul class="actions">
+                                <li>
+                                    <a href="en/services.html" class="button primary big">Services</a>
+                                </li>
+                                <li>
+                                    <a href="en/contact.html" class="button big">Contact</a>
+                                </li>
+                            </ul>
                         </div>
+                        <span class="image object">
+                            <img src="images/avatar.jpeg" width="" height="" id="avatar" alt="avatar" />
+                        </span>
                     </section>
                     <section>
                         <header class="major">
@@ -177,29 +261,27 @@
                     </section>
                 </div>
             </div>
-            <!-- Sidebar -->
             <div id="sidebar">
                 <div class="inner">
-                    <!-- Menu -->
                     <nav id="menu">
                         <header class="major">
                             <h2>Menu</h2>
                         </header>
                         <ul>
                             <li>
-                                <a href="en_index.html">Homepage</a>
+                                <a href="index.html">Home</a>
                             </li>
                             <li>
-                                <a href="en_services.html">Services</a>
+                                <a href="en/services.html">Services</a>
                             </li>
                             <li>
-                                <a href="en_aboutme.html">About me</a>
+                                <a href="en/aboutme.html">About me</a>
                             </li>
                             <li>
-                                <a href="en_references.html">References</a>
+                                <a href="en/references.html">References</a>
                             </li>
                             <li>
-                                <a href="en_contact.html">Contact</a>
+                                <a href="en/contact.html">Contact</a>
                             </li>
                             <li>
                                 <span class="opener">External Links</span>
@@ -223,7 +305,6 @@
                             </li>
                         </ul>
                     </nav>
-                    <!-- Section -->
                     <section>
                         <header class="major">
                             <h2>Get in touch</h2>
@@ -238,7 +319,6 @@
                             </li>
                         </ul>
                     </section>
-                    <!-- Section -->
                     <section>
                         <header class="major">
                             <h2>Advertisement</h2>
@@ -254,18 +334,16 @@
                             </article>
                         </div>
                     </section>
-                    <!-- Footer -->
                     <footer id="footer">
                         <p class="copyright">
                             🄯 Copyleft 2024. No rights reserved.
                             <br>
-                            Design: <a href="https://html5up.net">HTML5 UP</a>.
+                            <a target="_blank" href="/.well-known/security.txt">Security.txt</a> | Design: <a target="_blank" href="https://html5up.net">HTML5 UP</a>.
                         </p>
                     </footer>
                 </div>
             </div>
         </div>
-        <!-- Scripts -->
         <script src="assets/js/jquery.min.js"></script>
         <script src="assets/js/browser.min.js"></script>
         <script src="assets/js/breakpoints.min.js"></script>

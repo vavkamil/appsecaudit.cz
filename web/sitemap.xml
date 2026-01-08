@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+
+  <!-- English -->
+  <url>
+    <loc>https://appsecaudit.cz/en/</loc>
+  </url>
+
+  <url>
+    <loc>https://appsecaudit.cz/en/services</loc>
+  </url>
+
+  <url>
+    <loc>https://appsecaudit.cz/en/aboutme</loc>
+  </url>
+
+  <url>
+    <loc>https://appsecaudit.cz/en/references</loc>
+  </url>
+
+  <url>
+    <loc>https://appsecaudit.cz/en/contact</loc>
+  </url>
+
+  <!-- Czech -->
+  <url>
+    <loc>https://appsecaudit.cz/cs/</loc>
+  </url>
+
+  <url>
+    <loc>https://appsecaudit.cz/cs/services</loc>
+  </url>
+
+  <url>
+    <loc>https://appsecaudit.cz/cs/aboutme</loc>
+  </url>
+
+  <url>
+    <loc>https://appsecaudit.cz/cs/references</loc>
+  </url>
+
+  <url>
+    <loc>https://appsecaudit.cz/cs/contact</loc>
+  </url>
+
+</urlset>

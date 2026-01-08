@@ -1,0 +1,362 @@
+<!DOCTYPE HTML>
+<!--
+    Editorial by HTML5 UP
+    html5up.net | @ajlkn
+    Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html lang="cs">
+    <head>
+        <title>AppSec Audit .cz | @vavkamil | Kamil Vavra</title>
+        <meta charset="utf-8" />
+        <meta name="language" content="cs">
+        <meta name="viewport"
+              content="width=device-width, initial-scale=1, user-scalable=no" />
+        <meta name="author" content="@vavkamil">
+        <meta name="web_author" content="vavkamil.cz">
+        <meta name="robots" content="index,follow">
+        <meta name="description"
+              content="Advanced Web Application Security Audits & Penetration Testing for modern web apps, APIs, and CI/CD pipelines. Manual, attacker-driven testing focused on real-world risk.">
+        <meta name="keywords"
+              content="application security, appsec, web application security, penetration testing, offensive security, ethical hacking, security audits, secure code review, CI/CD security, bug bounty, vulnerability research">
+        <meta property="og:type" content="website">
+        <meta property="og:site_name" content="AppSecAudit.cz">
+        <meta property="og:title"
+              content="AppSec Audit .cz | @vavkamil | Kamil Vavra">
+        <meta property="og:description"
+              content="Advanced Web Application Security Audits & Penetration Testing for modern web apps, APIs, and CI/CD pipelines. Manual, attacker-driven testing focused on real-world risk.">
+        <meta property="og:image"
+              content="https://appsecaudit.cz/images/og-image.png">
+        <meta property="og:image:alt"
+              content="AppSec Audit .cz | Offensive Application Security by Kamil Vavra">
+        <meta property="og:image:width" content="1200">
+        <meta property="og:image:height" content="630">
+        <meta property="og:url" content="https://appsecaudit.cz/cs/index.html">
+        <meta property="og:locale" content="cs_CZ" />
+        <meta name="twitter:card" content="summary_large_image">
+        <meta name="twitter:title"
+              content="AppSec Audit .cz | @vavkamil | Kamil Vavra">
+        <meta name="twitter:description"
+              content="Advanced Web Application Security Audits & Penetration Testing for modern web apps, APIs, and CI/CD pipelines. Manual, attacker-driven testing focused on real-world risk.">
+        <meta name="twitter:image"
+              content="https://appsecaudit.cz/images/og-image.png">
+        <meta name="twitter:creator" content="@vavkamil">
+        <link rel="icon" href="../images/favicon.ico" />
+        <link rel="stylesheet" href="../assets/css/main.css" />
+        <link rel="canonical" href="https://appsecaudit.cz/cs/index.html">
+        <link rel="alternate"
+              hreflang="en"
+              href="https://appsecaudit.cz/index.html">
+        <link rel="alternate"
+              hreflang="cs"
+              href="https://appsecaudit.cz/cs/index.html">
+        <link rel="alternate"
+              hreflang="x-default"
+              href="https://appsecaudit.cz/index.html">
+        <script type="application/ld+json">
+            {
+                "@context": "https://schema.org",
+                "@graph": [{
+                    "@type": "Person",
+                    "@id": "https://appsecaudit.cz/#person",
+                    "name": "Kamil Vávra",
+                    "alternateName": "Kamil Vavra",
+                    "url": "https://appsecaudit.cz",
+                    "email": "vavkamil@protonmail.com",
+                    "jobTitle": "Application Security Engineer",
+                    "sameAs": [
+                        "https://github.com/vavkamil",
+                        "https://www.linkedin.com/in/vavkamil",
+                        "https://twitter.com/vavkamil",
+                        "https://vavkamil.cz"
+                    ]
+                }, {
+                    "@type": "ProfessionalService",
+                    "@id": "https://appsecaudit.cz/#service",
+                    "name": "AppSecAudit.cz",
+                    "url": "https://appsecaudit.cz",
+                    "logo": "https://appsecaudit.cz/images/og-image.png",
+                    "email": "vavkamil@protonmail.com",
+                    "founder": {
+                        "@id": "https://appsecaudit.cz/#person"
+                    },
+                    "areaServed": "Worldwide",
+                    "serviceType": [
+                        "Web Application Penetration Testing",
+                        "Advanced Web Application Security Audits",
+                        "Secure Code Review",
+                        "CI/CD Security Assessments"
+                    ],
+                    "sameAs": [
+                        "https://github.com/vavkamil",
+                        "https://www.linkedin.com/in/vavkamil"
+                    ]
+                }]
+            }
+        </script>
+        <style>
+            #main>.inner>section {
+                padding: 3em 0 4em 0;
+            }
+
+            #avatar {
+                float: right;
+                width: 75% !important;
+
+                height: auto;
+                filter: grayscale(100%);
+                transition: transform 0.3s,
+                    filter 0.3s;
+            }
+
+            #avatar:hover {
+                filter: none;
+                transform: scale(1.05) rotate(3deg);
+            }
+
+            @media screen and (max-width: 680px) {
+
+                #banner {
+                    display: flex !important;
+                    flex-direction: column !important;
+                }
+
+
+                #banner>.content {
+                    order: 1 !important;
+                }
+
+                #banner>.image {
+                    order: 2 !important;
+                    margin-top: 2em;
+                }
+
+
+                #avatar {
+                    float: none !important;
+                    width: 75% !important;
+                    max-width: 375px;
+                    display: block;
+                    margin: 0 auto;
+                }
+            }
+
+
+
+            #links {
+                text-transform: none !important;
+            }
+        </style>
+    </head>
+    <body class="is-preload">
+        <div id="wrapper">
+            <div id="main">
+                <div class="inner">
+                    <header id="header">
+                        <a href="index.html" class="logo"><strong>AppSec</strong> Audit .cz | Web <strong>Application Security</strong> by @vavkamil</a>
+                        <ul class="icons">
+                            <li>
+                                <a target="_blank"
+                                   href="https://www.linkedin.com/in/vavkamil/"
+                                   class="icon brands fa-linkedin"><span class="label">LinkedIn</span></a>
+                            </li>
+                            <li>
+                                <a target="_blank"
+                                   href="https://github.com/vavkamil/appsecaudit.cz"
+                                   class="icon brands fa-github"><span class="label">GitHub</span></a>
+                            </li>
+                            <li>
+                                <a target="_blank"
+                                   href="https://twitter.com/vavkamil"
+                                   class="icon brands fa-twitter"><span class="label">Twitter</span></a>
+                            </li>
+                            <li>|</li>
+                            <li>
+                                <a href="index.html" class="icon solid fa-flag"><span class="label">CZ</span> CZ</a>
+                            </li>
+                            <li>
+                                <a href="../index.html" class="icon regular fa-flag"><span class="label">EN</span> EN</a>
+                            </li>
+                        </ul>
+                    </header>
+                    <section id="banner">
+                        <div class="content">
+                            <header>
+                                <h1>
+                                    Ahoj, jmenuji se
+                                    <br />
+                                    Kamil Vavra
+                                </h1>
+                                <p>
+                                    Senior <strong>Application Security</strong> Engineer
+                                </p>
+                            </header>
+                            <p>
+                                Jsem nezávislý odborník na ofenzivní bezpečnost s více než <strong>19 lety praktických zkušeností v oblasti etického hackingu</strong>, specializující se na ofenzivní bezpečnost webových aplikací.
+                            </p>
+                            <p>
+                                Pomáhám organizacím identifikovat kritické slabiny a budovat <em>skutečnou odolnost</em> vůči moderním hrozbám. <strong>Dostupný pro krátkodobé spolupráce, včetně:</strong>
+                            </p>
+                            <ul>
+                                <li>Web Application Penetration Testing</li>
+                                <li>Advanced Web Application Security Audits</li>
+                                <li>Secure Code Review & CI/CD Security Assessments</li>
+                                <li>Application Security Testing (SAST, DAST, SCA)</li>
+                                <li>Threat Modeling & Real-World Attack Surface Analysis</li>
+                            </ul>
+                            <ul class="actions">
+                                <li>
+                                    <a href="cs/services.html" class="button primary big">Služby</a>
+                                </li>
+                                <li>
+                                    <a href="cs/contact.html" class="button big">Kontakt</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <span class="image object">
+                            <img src="../images/avatar.jpeg"
+                                 width=""
+                                 height=""
+                                 id="avatar"
+                                 alt="avatar" />
+                        </span>
+                    </section>
+                    <section>
+                        <header class="major">
+                            <h2>Proč se mnou spolupracovat?</h2>
+                        </header>
+                        <div class="features">
+                            <article>
+                                <span class="icon fa-thumbs-up"></span>
+                                <div class="content">
+                                    <h3>Skutečné ofenzivní zkušenosti</h3>
+                                    <p>
+                                        Už téměř dvacet let reálně útočím na produkční systémy, nejedná se o pouhé spouštění automatických scannerů.
+                                        Každý engagement je <strong>plně manuální</strong> a zaměřený na reálné scénáře kompromitace.
+                                    </p>
+                                </div>
+                            </article>
+                            <article>
+                                <span class="icon solid fa-crosshairs"></span>
+                                <div class="content">
+                                    <h3>Specializace na bezpečnost webových aplikací</h3>
+                                    <p>
+                                        Mou hlavní specializací jeofenzivní bezpečnost webových aplikací, včetně komplexních business logic zranitelností a moderních útoků na API a CI/CD.
+                                        To mi umožňuje odhalit zranitelnosti, které obecné audity často nezachytí.
+                                    </p>
+                                </div>
+                            </article>
+                            <article>
+                                <span class="icon solid fa-bug"></span>
+                                <div class="content">
+                                    <h3>Praktické zranitelnosti s reálným dopadem</h3>
+                                    <p>
+                                        Testování stavím na aktuálních attack technikách používaných <em>in the wild</em>, ne na zastaralých checklistech.
+                                        Výstupem je srozumitelný report.
+                                        Zaměřuji se na zranitelnosti, které standardní testování často nenajde.
+                                    </p>
+                                </div>
+                            </article>
+                            <article>
+                                <span class="icon solid fa-users"></span>
+                                <div class="content">
+                                    <h3>Respektovaná a ověřená expertíza</h3>
+                                    <p>
+                                        Aktivně přispívám security komunitě jako OWASP leader, řečník na odborných akcích a open-source vývojář.
+                                        Klienti se mnou spolupracují přímo, protože důvěra a ověřená odbornost jsou v bezpečnosti klíčové.
+                                    </p>
+                                </div>
+                            </article>
+                        </div>
+                    </section>
+                </div>
+            </div>
+            <div id="sidebar">
+                <div class="inner">
+                    <nav id="menu">
+                        <header class="major">
+                            <h2>Menu</h2>
+                        </header>
+                        <ul>
+                            <li>
+                                <a href="index.html">Domů</a>
+                            </li>
+                            <li>
+                                <a href="services.html">Služby</a>
+                            </li>
+                            <li>
+                                <a href="aboutme.html">O mně</a>
+                            </li>
+                            <li>
+                                <a href="references.html">Reference</a>
+                            </li>
+                            <li>
+                                <a href="contact.html">Kontakt</a>
+                            </li>
+                            <li>
+                                <span class="opener">Externí Odkazy</span>
+                                <ul id="links">
+                                    <li>
+                                        <a target="_blank" href="#">CVEalert.io</a>
+                                    </li>
+                                    <li>
+                                        <a target="_blank" href="#">vavkamil.cz</a>
+                                    </li>
+                                    <li>
+                                        <a target="_blank" href="#">TunaSec.com</a>
+                                    </li>
+                                    <li>
+                                        <a target="_blank" href="https://github.com/vavkamil/">GitHub.com</a>
+                                    </li>
+                                    <li>
+                                        <a target="_blank" href="https://www.linkedin.com/in/vavkamil/">LinkedIn.com</a>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </nav>
+                    <section>
+                        <header class="major">
+                            <h2>Ozvěte se</h2>
+                        </header>
+                        <p>E-mail je preferovaný způsob komunikace.</p>
+                        <ul class="contact">
+                            <li class="icon solid fa-envelope">
+                                <a href="#" onclick="prompt('Email address', 'vavkamil@protonmail.com')">vavkamil@protonmail.com</a>
+                            </li>
+                            <li class="icon solid fa-home">
+                                Brno, Czechia <em>(remote)</em>
+                            </li>
+                        </ul>
+                    </section>
+                    <section>
+                        <header class="major">
+                            <h2>Reklama</h2>
+                        </header>
+                        <div class="mini-posts">
+                            <article>
+                                <a href="https://cvealert.io" target="_blank" class="image">
+                                    <img src="../images/hero.webp" width="" height="" alt="cvealert.io" />
+                                </a>
+                                <p>
+                                    <strong>CVEalert.io</strong> <em>~ join the waitlist for early access.</em>
+                                </p>
+                            </article>
+                        </div>
+                    </section>
+                    <footer id="footer">
+                        <p class="copyright">
+                            🄯 Copyleft 2024. No rights reserved.
+                            <br>
+                            <a target="_blank" href="/.well-known/security.txt">Security.txt</a> | Design: <a target="_blank" href="https://html5up.net">HTML5 UP</a>.
+                        </p>
+                    </footer>
+                </div>
+            </div>
+        </div>
+        <script src="../assets/js/jquery.min.js"></script>
+        <script src="../assets/js/browser.min.js"></script>
+        <script src="../assets/js/breakpoints.min.js"></script>
+        <script src="../assets/js/util.js"></script>
+        <script src="../assets/js/main.js"></script>
+    </body>
+</html>

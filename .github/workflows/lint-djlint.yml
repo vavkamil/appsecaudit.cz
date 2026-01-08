@@ -5,7 +5,8 @@ name: Lint - HTML
 on:
   pull_request:
     paths:
-      - '**.html'
+      - 'web/*.html'
+      - 'web/**/*.html'
 
 permissions: {}
 
@@ -32,4 +33,4 @@ jobs:
           pip install $(grep '^djlint==' requirements.txt)
 
       - name: Run djlint
-        run: python -m djlint *.html --lint --check --format-css --format-js
+        run: python -m djlint web/**.html web/**/**.html --lint --check --format-css --format-js

@@ -7,9 +7,9 @@ section() {
 }
 
 section "⏳ Reformatting HTML templates with djlint"
-python -m djlint *.html --reformat --format-css --format-js
+python -m djlint web/*.html web/**/*.html --reformat --format-css --format-js
 
 section "⏳ Linting HTML templates with djlint"
-python -m djlint *.html --lint --check --format-css --format-js
+python -m djlint web/*.html web/**/*.html --lint --check --format-css --format-js
 
 echo -e "✅ \033[1;32mAll formatting done!\033[0m\n"

@@ -1,4 +1,4 @@
 cssbeautifier==1.15.4
 djlint==1.36.4
 jsbeautifier==1.15.4
-zizmor==1.16.1
+zizmor==1.19.0
