@@ -112,9 +112,8 @@ If you believe you have identified a security issue related to **AppSecAudit.cz*
 
 ## 📄 License
 
-- Website content: © Kamil Vávra  
+- Website content: 🄯 Copyleft 2024. No rights reserved.
 - Design: based on **HTML5 UP – Editorial**, used under its license  
-- No permission is granted to reuse the content for commercial purposes
 
 ---
 
