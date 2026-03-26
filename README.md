@@ -45,7 +45,7 @@ Content is written for **engineering-led teams**, security professionals, and te
 ## 🏗️ Tech Stack & Architecture
 
 - Static HTML / CSS / JavaScript
-- Hosted on **Cloudflare Pages**
+- Hosted on **GitHub Pages**
 - SEO-optimized (Open Graph, Twitter Cards, JSON-LD)
 - No backend, no cookies, no analytics, no tracking scripts
 
@@ -53,7 +53,7 @@ Content is written for **engineering-led teams**, security professionals, and te
 
 - Source: GitHub repository
 - Build step: none (static)
-- Hosting: Cloudflare Pages
+- Hosting: GitHub Pages
 - URLs: clean paths (e.g. `/en/services`, `/cs/services`)
 
 ---
