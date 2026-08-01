@@ -1,4 +1,4 @@
 cssbeautifier==2.0.3
-djlint==1.39.2
+djlint==1.40.8
 jsbeautifier==2.0.3
 zizmor==1.26.1
